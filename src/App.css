@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400&family=Sansita:ital@1&display=swap");
+:root {
+  --background--Color: #231f42;
+  --btn-Color: #37aeab;
+  --main--font--color: #f56b9a;
+  --sec--font--color: white;
+  --main--font: "Fira Sans", sans-serif;
+  --sec--font: "Sansita", sans-serif;
+}
+h2 {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+h6 {
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+  font-size: 0.8rem;
+}
+.App {
+  margin: 1.5rem auto;
+  text-align: center;
+  background: var(--background--Color);
+  min-height: 600px;
+  padding: 1rem;
+  width: 400px;
+}
+.logoImg {
+  width: 185px;
+  margin: 5rem auto;
+}
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: fit-content;
+}
+.search {
+  padding: 0.5rem;
+  width: 350px;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.main-title {
+  color: var(--main--font--color);
+  font-family: var(--sec--font);
+  font-size: 2rem;
+}
+.intro {
+  color: var(--sec--font--color);
+  font-family: var(--main--font);
+  margin-top: -0.5rem;
+}
+.dot {
+  padding: 0.2rem;
+  background-color: var(--sec--font--color);
+  width: 1.5px;
+  border-radius: 100%;
+}
+#dotOne {
+  opacity: 0.3;
+}
+.allDots {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.bookBtn {
+  width: 150px;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  background-color: var(--btn-Color);
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0.4rem auto;
+}
+.bookBtnOrder {
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  background-color: var(--btn-Color);
+  border: none;
+  border-radius: 0.5rem;
+  margin: 1.5rem auto;
+  width: 350px;
+  height: 60px;
+  border-radius: 0;
+}
+.bookEvent {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+.bookBtn:hover {
+  background-color: var(--main--font--color);
+}
+#btn {
+  width: 60px;
+}
+.bookTickets {
+  color: var(--sec--font--color);
+  text-decoration: none;
+}
+.allTicketsBtn {
+  color: var(--btn-Color);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 6rem;
+  width: 350px;
+  border: 2px solid var(--btn-Color);
+  margin-bottom: 5%;
+}
+.allTicketsLink {
+  text-decoration: none;
+  color: var(--btn-Color);
+}
+.title {
+  color: var(--main--font--color);
+  font-family: var(--sec--font);
+  font-size: 2rem;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+}
+.eventContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--sec--font--color);
+  /* align-self: center; */
+}
+.date {
+  border: 1px solid var(--sec--font--color);
+  font-family: var(--main--font);
+  height: 50px;
+  line-height: 4;
+  padding: 0.5rem;
+  width: 40px;
+}
+.name {
+  font-family: var(--main--font);
+  color: var(--sec--font--color);
+  font-size: 1.4rem;
+  text-shadow: var(--main--font--color) 1px 2px 1px;
+}
+.place {
+  font-family: var(--main--font);
+  opacity: 0.8;
+  font-style: italic;
+  font-weight: 400;
+}
+.time {
+  font-size: 0.8rem;
+  font-family: var(--main--font);
+}
+/*product och order*/
+.ticketsCount {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+.ticketNumber {
+  font-size: 2rem;
+  border-left: 2px solid var(--main--font--color);
+  border-right: 2px solid var(--main--font--color);
+  width: 33%;
+}
+.ticketButton {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  font-size: 2rem;
+  width: 33%;
+  cursor: pointer;
+}
+.ticketsChoice {
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+}
+.ticketsCart {
+  display: flex;
+  flex-direction: column;
+}
+.whenCart {
+  font-size: 1rem;
+  font-family: var(--main--font);
+}
+.orderTitle {
+  color: var(--main--font--color);
+  font-family: var(--sec--font);
+  font-size: 1.5rem;
+  margin-block-start: 0.1rem;
+  margin-block-end: 0.1rem;
+}
+.mainContainer,
+.mainOrderContainer {
+  width: 400px;
+  color: white;
+}
+.mainOrderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 600px;
+}
+.eventIntro {
+  font-size: 1.4rem;
+  padding: 0 3rem;
+}
+.eventTicket {
+  margin-bottom: 15%;
+}
+.eventName {
+  color: var(--main--font--color);
+  font-family: var(--sec--font);
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.eventPlace {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+.eventWhen {
+  color: var(--btn-Color);
+  font-weight: 600;
+  text-decoration: none;
+}
+.eventPlace,
+.eventWhen {
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
+}
+.eventPrice,
+.totalPrice {
+  font-size: 2.2rem;
+  border-bottom: 2px solid var(--main--font--color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 7%;
+}
+.totalPrice {
+  border-bottom: none;
+  padding: 0;
+  font-family: var(--main--font);
+  color: var(--main--font--color);
+}
+.totalText {
+  font-style: italic;
+  font-size: 1.3rem;
+}
+.priceContainer,
+.orderContainer {
+  border: 2px solid var(--main--font--color);
+  min-height: 100%;
+  margin: 2rem auto;
+}
+.orderPrice {
+  border-top: 2px solid var(--main--font--color);
+  padding: 1rem;
+  font-family: var(--main--font);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--main--font--color);
+}
+.orderContainer {
+  width: 340px;
+}
+.priceContainer {
+  width: 240px;
+}
+.cartBookTickets {
+  font-size: 1.6rem;
+}
+.orderInfo {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  padding: 0 4%;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--main--font--color);
+}
+.orderText {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-block-start: 0.4rem;
+  margin-block-end: 0.4rem;
+}
+.allTicketsInfo {
+  min-height: 100%;
+}
+.itemType {
+  margin-left: -20rem;
+  padding-top: 1rem;
+  color: rgba(0, 0, 0, 0.404);
+  font-family: var(--main--font);
+}
+.receiptCard {
+  background-color: var(--sec--font--color);
+  padding-bottom: 2rem;
+}
+.barcode {
+  width: 200px;
+  padding-top: 2rem;
+}
+.barNumber {
+  margin-top: -0.8rem;
+  font-family: var(--main--font);
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.712);
+}
+.barcodeContainer {
+  background-color: rgba(255, 255, 255, 0.884);
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+#dottedLine {
+  border-bottom-style: dotted;
+  border-color: rgba(0, 0, 0, 0.411);
+  padding-bottom: 2rem;
+  font-size: 2.3rem;
+}
+.placeName {
+  font-family: var(--main--font);
+  font-weight: 600;
+  color: hsla(0, 0%, 0%, 70%);
+  font-size: 20px;
+}
+.adress,
+.sectionPlace {
+  font-family: var(--main--font);
+  font-weight: 400;
+  color: hsla(0, 0%, 0%, 60%);
+}
+.whenContainer {
+  display: flex;
+  /* gap: 5rem; */
+  justify-content: space-around;
+  border-bottom-style: dotted;
+  border-color: rgba(0, 0, 0, 0.411);
+  border-top-style: dotted;
+}
+.from {
+  border-left-style: dotted;
+  border-color: rgba(0, 0, 0, 0.411);
+  border-right-style: dotted;
+  padding: 0 3rem 0 3rem;
+}
+.whenTitle,
+.fromTitle,
+.toTitle,
+.orderDate,
+.orderFrom,
+.orderTo {
+  color: rgba(0, 0, 0, 0.404);
+  font-family: var(--main--font);
+}
+.orderDate,
+.orderFrom,
+.orderTo {
+  color: rgba(0, 0, 0, 0.623);
+  font-size: 1.2rem;
+}
+
+.emptyCart {
+  margin-top: 50%;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+.remove {
+  color: var(--sec--font--color);
+  font-family: var(--sec--font);
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
